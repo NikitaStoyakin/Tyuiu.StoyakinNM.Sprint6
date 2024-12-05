@@ -32,7 +32,7 @@ namespace Tyuiu.StoyakinNM.Sprint6.Task0.V12
        
         private void buttonHelp_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Таск 0 выполнил студент групы ПКТб 24-1 Стоякин Никита Михайлович");
+            MessageBox.Show("Таск 0.Выполнил студент групы ПКТб 24-1 Стоякин Никита Михайлович");
         }
     }
 }
