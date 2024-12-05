@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Tyuiu.StoyakinNM.Sprint6.Task1.V28.Lib\Tyuiu.StoyakinNM.Sprint6.Task1.V28.Lib.csproj" />
+    <ProjectReference Include="..\Tyuiu.StoyakinNM.Sprint6.Task2.V10.Lib\Tyuiu.StoyakinNM.Sprint6.Task2.V10.Lib.csproj" />
   </ItemGroup>
 
   <ItemGroup>
