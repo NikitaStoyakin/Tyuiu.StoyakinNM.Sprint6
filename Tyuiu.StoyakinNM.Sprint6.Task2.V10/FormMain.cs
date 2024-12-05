@@ -62,5 +62,9 @@ namespace Tyuiu.StoyakinNM.Sprint6.Task2.V10
             buttonDone_SNM.BackColor = Color.Blue;
         }
 
+        private void dataGridViewOne_SNM_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

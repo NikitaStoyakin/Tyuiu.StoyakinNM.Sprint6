@@ -95,6 +95,7 @@
             dataGridViewOne_SNM.RowHeadersVisible = false;
             dataGridViewOne_SNM.Size = new Size(188, 385);
             dataGridViewOne_SNM.TabIndex = 3;
+            dataGridViewOne_SNM.CellContentClick += dataGridViewOne_SNM_CellContentClick;
             // 
             // Column1
             // 
