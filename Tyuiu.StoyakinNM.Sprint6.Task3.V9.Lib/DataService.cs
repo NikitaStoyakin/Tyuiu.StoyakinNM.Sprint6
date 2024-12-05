@@ -6,22 +6,30 @@ namespace Tyuiu.StoyakinNM.Sprint6.Task3.V9.Lib
         public int[,] Calculate(int[,] matrix)
         {
             int rows = matrix.GetLength(0);
+            int cols = matrix.GetLength(1);
 
-            for (int i = 0; i < rows - 1; i++)
+            var rowsList = new List<int[]>();
+
+            for (int i = 0; i < rows; i++)
             {
-                for (int j = i + 1; j < rows; j++)
+                int[] row = new int[cols];
+                for (int j = 0; j < cols; j++)
                 {
-                    if (matrix[i, 4] > matrix[j, 4])
-                    {
-                        for (int k = 0; k < matrix.GetLength(1); k++)
-                        {
-                            int temp = matrix[i, k];
-                            matrix[i, k] = matrix[j, k];
-                            matrix[j, k] = temp;
-                        }
-                    }
+                    row[j] = matrix[i, j];
+                }
+                rowsList.Add(row);
+            }
+
+            rowsList.Sort((row1, row2) => row1[4].CompareTo(row2[4]));
+
+            for (int i = 0; i < rows; i++)
+            {
+                for (int j = 0; j < cols; j++)
+                {
+                    matrix[i, j] = rowsList[i][j];
                 }
             }
+
             return matrix;
         }
     }

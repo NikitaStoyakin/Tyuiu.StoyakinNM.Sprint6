@@ -9,20 +9,33 @@ namespace Tyuiu.StoyakinNM.Sprint6.Task3.V9.Test
         {
             DataService ds = new DataService();
 
-            int[,] matrix = new int[5, 5] { {-14, 25, 26, 18, 17, },
-                                          {28, 10, 6, -2, 4, },
-                                          {30, 25, -3, 11, -10, },
-                                          {11, 32, -5, -20, 25, },
-                                          {2, -18, 11, 8, -20, } };
+            int[,] matrix = new int[5, 5]
+            {
+        { -14, 25, 26, 18, 17 },
+        { 28, 10, 6, -2, 4 },
+        { 30, 25, -3, 11, -10 },
+        { 11, 32, -5, -20, 25 },
+        { 2, -18, 11, 8, -20 }
+            };
+
+            int[,] wait = new int[5, 5]
+            {
+        {  2, -18, 11,  8, -20 },
+        { 30,  25, -3, 11, -10 },
+        { 28,  10,  6, -2,   4 },
+        { -14,  25, 26, 18,  17 },
+        { 11,  32, -5,-20,  25 }
+            };
 
             int[,] res = ds.Calculate(matrix);
-            int[,] wait = { { 2, -18, 11, 8, -20, },
-                                          { 30, 25, -3, 11, -10, },
-                                          { 28, 10, 6, -2, 4, },
-                                          { -14, 25, 26, 18, 17, },
-                                          { 11, 32, -5, -20, 25, } };
 
-            CollectionAssert.AreEqual(wait, res);
+            for (int i = 0; i < res.GetLength(0); i++)
+            {
+                for (int j = 0; j < res.GetLength(1); j++)
+                {
+                    Assert.AreEqual(wait[i, j], res[i, j], $"Mismatch at index [{i},{j}]");
+                }
+            }
         }
     }
 }
