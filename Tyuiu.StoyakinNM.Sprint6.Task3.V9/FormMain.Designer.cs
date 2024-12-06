@@ -33,10 +33,10 @@
             textBoxTask_SNM = new TextBox();
             dataGridViewOne_SNM = new DataGridView();
             groupBoxTwo_SNM = new GroupBox();
+            textBoxResult_SNM = new TextBox();
             buttonReference_SNM = new Button();
             buttonDone_SNM = new Button();
             labelOne_SNM = new Label();
-            textBoxResult_SNM = new TextBox();
             groupBoxOne_SNM.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewOne_SNM).BeginInit();
             groupBoxTwo_SNM.SuspendLayout();
@@ -88,6 +88,15 @@
             groupBoxTwo_SNM.TabStop = false;
             groupBoxTwo_SNM.Text = "Вывод данных";
             // 
+            // textBoxResult_SNM
+            // 
+            textBoxResult_SNM.Location = new Point(6, 48);
+            textBoxResult_SNM.Multiline = true;
+            textBoxResult_SNM.Name = "textBoxResult_SNM";
+            textBoxResult_SNM.ReadOnly = true;
+            textBoxResult_SNM.Size = new Size(188, 343);
+            textBoxResult_SNM.TabIndex = 4;
+            // 
             // buttonReference_SNM
             // 
             buttonReference_SNM.Location = new Point(29, 397);
@@ -117,15 +126,6 @@
             labelOne_SNM.TabIndex = 1;
             labelOne_SNM.Text = "Результат:";
             // 
-            // textBoxResult_SNM
-            // 
-            textBoxResult_SNM.Location = new Point(6, 48);
-            textBoxResult_SNM.Multiline = true;
-            textBoxResult_SNM.Name = "textBoxResult_SNM";
-            textBoxResult_SNM.ReadOnly = true;
-            textBoxResult_SNM.Size = new Size(188, 343);
-            textBoxResult_SNM.TabIndex = 4;
-            // 
             // FormMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -135,7 +135,7 @@
             Controls.Add(groupBoxOne_SNM);
             Name = "FormMain";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Спринт 6 | Таск 2| Вариант 10 | Стоякин Н.М.";
+            Text = "Спринт 6 | Таск 3| Вариант 9 | Стоякин Н.М.";
             Load += FormMain_Load;
             groupBoxOne_SNM.ResumeLayout(false);
             groupBoxOne_SNM.PerformLayout();
