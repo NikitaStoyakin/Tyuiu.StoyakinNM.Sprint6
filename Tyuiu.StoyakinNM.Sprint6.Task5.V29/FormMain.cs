@@ -10,7 +10,7 @@ namespace Tyuiu.StoyakinNM.Sprint6.Task5.V29
 
         DataService ds = new DataService();
 
-        string path = @"C:\Users\Никита\AppData\Local\Temp\InPutDataFileTask5V29.txt";
+        string path = @"C:\Users\Никита\source\repos\Tyuiu.StoyakinNM.Sprint6\Tyuiu.StoyakinNM.Sprint6.Task5.V29\bin\Debug\InPutDataFileTask5V29.txt";
         private void buttonDone_Click(object sender, EventArgs e)
         {
             dataGridViewResult_SNM.ColumnCount = 2;

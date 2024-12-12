@@ -7,7 +7,7 @@ namespace Tyuiu.StoyakinNM.Sprint6.Task5.V29.Test
         [TestMethod]
         public void ValidLoadFromDataFile()
         {
-            string path = Path.Combine(Path.GetTempPath(), "InPutDataFileTask5V29.txt");
+            string path = @"C:\Users\Никита\source\repos\Tyuiu.StoyakinNM.Sprint6\Tyuiu.StoyakinNM.Sprint6.Task5.V29\bin\Debug\InPutDataFileTask5V29.txt";
 
             FileInfo fileInfo = new FileInfo(path);
             bool fileExists = fileInfo.Exists;
