@@ -8,7 +8,6 @@ namespace Tyuiu.StoyakinNM.Sprint6.Task5.V29.Lib
         public int len = 0;
         public double[] LoadFromDataFile(string path)
         {
-            path = @"C:\Users\Никита\source\repos\Tyuiu.StoyakinNM.Sprint6\Tyuiu.StoyakinNM.Sprint6.Task5.V29\bin\Debug\InPutDataFileTask5V29.txt";
             using (StreamReader reader = new StreamReader(path))
             {
                 string line;
