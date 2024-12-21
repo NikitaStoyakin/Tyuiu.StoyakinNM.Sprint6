@@ -14,13 +14,15 @@ namespace Tyuiu.StoyakinNM.Sprint6.Task7.V5.Lib
 
             int[,] matrix = new int[rows, columns];
 
+            int xCol = 9;
+
             for(int i = 0; i < rows; i++)
             {
                 string[] digits = file[i].Split(";");
                 for (int j = 0; j < columns; j++)
                 {
                     int digit = Convert.ToInt32(digits[j]);
-                    if (digit < 2 )
+                    if (j == xCol && digit < 2 )
                     {
                         matrix[i, j] = 2;
                     }
